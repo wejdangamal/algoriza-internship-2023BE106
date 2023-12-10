@@ -17,3 +17,22 @@ D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Services\bin\Debug\net7.0
 D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Services\bin\Debug\net7.0\Vzeeta.Data.pdb
 D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Services\bin\Debug\net7.0\Vzeeta.Repository.dll
 D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Services\bin\Debug\net7.0\Vzeeta.Repository.pdb
+D:\Source\Vzeeta.Services\bin\Debug\net7.0\Vzeeta.Services.deps.json
+D:\Source\Vzeeta.Services\bin\Debug\net7.0\Vzeeta.Services.dll
+D:\Source\Vzeeta.Services\bin\Debug\net7.0\Vzeeta.Services.pdb
+D:\Source\Vzeeta.Services\bin\Debug\net7.0\Vzeeta.Core.dll
+D:\Source\Vzeeta.Services\bin\Debug\net7.0\Vzeeta.Data.dll
+D:\Source\Vzeeta.Services\bin\Debug\net7.0\Vzeeta.Repository.dll
+D:\Source\Vzeeta.Services\bin\Debug\net7.0\Vzeeta.Core.pdb
+D:\Source\Vzeeta.Services\bin\Debug\net7.0\Vzeeta.Data.pdb
+D:\Source\Vzeeta.Services\bin\Debug\net7.0\Vzeeta.Repository.pdb
+D:\Source\Vzeeta.Services\obj\Debug\net7.0\Vzeeta.Services.csproj.AssemblyReference.cache
+D:\Source\Vzeeta.Services\obj\Debug\net7.0\Vzeeta.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Source\Vzeeta.Services\obj\Debug\net7.0\Vzeeta.Services.AssemblyInfoInputs.cache
+D:\Source\Vzeeta.Services\obj\Debug\net7.0\Vzeeta.Services.AssemblyInfo.cs
+D:\Source\Vzeeta.Services\obj\Debug\net7.0\Vzeeta.Services.csproj.CoreCompileInputs.cache
+D:\Source\Vzeeta.Services\obj\Debug\net7.0\Vzeeta.Services.csproj.CopyComplete
+D:\Source\Vzeeta.Services\obj\Debug\net7.0\Vzeeta.Services.dll
+D:\Source\Vzeeta.Services\obj\Debug\net7.0\refint\Vzeeta.Services.dll
+D:\Source\Vzeeta.Services\obj\Debug\net7.0\Vzeeta.Services.pdb
+D:\Source\Vzeeta.Services\obj\Debug\net7.0\ref\Vzeeta.Services.dll

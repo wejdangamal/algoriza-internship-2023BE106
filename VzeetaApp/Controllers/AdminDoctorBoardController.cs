@@ -52,7 +52,7 @@ namespace VzeetaApp.Controllers
                         return Ok("Update Successfully");
                     else
                     {
-                        return BadRequest();
+                        return BadRequest(_result);
                     }
                 }
                 catch (Exception ex)

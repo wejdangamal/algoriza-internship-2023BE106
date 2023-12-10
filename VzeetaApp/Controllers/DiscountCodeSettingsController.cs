@@ -22,17 +22,21 @@ namespace VzeetaApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                var IsAdded = await setting.Add(code);
-                if (IsAdded)
+                try
                 {
-                    return Ok("Is Added Successfully");
+                    var IsAdded = await setting.Add(code);
+                    if (IsAdded)
+                    {
+                        return Ok("Is Added Successfully");
+                    }
                 }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex.Message);
+                }
+
             }
-            else
-            {
-                return BadRequest(new { Error = ModelInValid() });
-            }
-            return BadRequest("Something Wrong");
+            return BadRequest(new { Error = ModelInValid() });
         }
         [HttpPut("Deactivate/{id}")]
         public async Task<IActionResult> deactivateCode(int id)
@@ -48,7 +52,7 @@ namespace VzeetaApp.Controllers
                     }
                     else
                     {
-                        return NotFound("Not Found");
+                        return NotFound(IsDeactivate);
                     }
                 }
                 catch (Exception ex)
@@ -74,7 +78,7 @@ namespace VzeetaApp.Controllers
                         return Ok("Updated Successfully");
                     }
                     else
-                        return BadRequest("Somethinh Want Wrong");
+                        return BadRequest(IsUpdated);
                 }
                 catch (Exception ex)
                 {
@@ -98,7 +102,7 @@ namespace VzeetaApp.Controllers
                 }
                 else
                 {
-                    return NotFound("Not Found");
+                    return NotFound(IsDeleted);
                 }
             }
             else

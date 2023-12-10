@@ -13,3 +13,18 @@ D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Data\obj\Debug\net7.0\Vze
 D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Data\obj\Debug\net7.0\refint\Vzeeta.Data.dll
 D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Data\obj\Debug\net7.0\Vzeeta.Data.pdb
 D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Data\obj\Debug\net7.0\ref\Vzeeta.Data.dll
+D:\Source\Vzeeta.Data\bin\Debug\net7.0\Vzeeta.Data.deps.json
+D:\Source\Vzeeta.Data\bin\Debug\net7.0\Vzeeta.Data.dll
+D:\Source\Vzeeta.Data\bin\Debug\net7.0\Vzeeta.Data.pdb
+D:\Source\Vzeeta.Data\bin\Debug\net7.0\Vzeeta.Core.dll
+D:\Source\Vzeeta.Data\bin\Debug\net7.0\Vzeeta.Core.pdb
+D:\Source\Vzeeta.Data\obj\Debug\net7.0\Vzeeta.Data.csproj.AssemblyReference.cache
+D:\Source\Vzeeta.Data\obj\Debug\net7.0\Vzeeta.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Source\Vzeeta.Data\obj\Debug\net7.0\Vzeeta.Data.AssemblyInfoInputs.cache
+D:\Source\Vzeeta.Data\obj\Debug\net7.0\Vzeeta.Data.AssemblyInfo.cs
+D:\Source\Vzeeta.Data\obj\Debug\net7.0\Vzeeta.Data.csproj.CoreCompileInputs.cache
+D:\Source\Vzeeta.Data\obj\Debug\net7.0\Vzeeta.Data.csproj.CopyComplete
+D:\Source\Vzeeta.Data\obj\Debug\net7.0\Vzeeta.Data.dll
+D:\Source\Vzeeta.Data\obj\Debug\net7.0\refint\Vzeeta.Data.dll
+D:\Source\Vzeeta.Data\obj\Debug\net7.0\Vzeeta.Data.pdb
+D:\Source\Vzeeta.Data\obj\Debug\net7.0\ref\Vzeeta.Data.dll

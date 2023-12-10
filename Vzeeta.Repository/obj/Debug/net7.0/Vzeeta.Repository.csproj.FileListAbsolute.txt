@@ -15,3 +15,20 @@ D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Repository\bin\Debug\net7
 D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Repository\bin\Debug\net7.0\Vzeeta.Core.pdb
 D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Repository\bin\Debug\net7.0\Vzeeta.Data.pdb
 D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Repository\obj\Debug\net7.0\Vzeeta.Repository.csproj.CopyComplete
+D:\Source\Vzeeta.Repository\bin\Debug\net7.0\Vzeeta.Repository.deps.json
+D:\Source\Vzeeta.Repository\bin\Debug\net7.0\Vzeeta.Repository.dll
+D:\Source\Vzeeta.Repository\bin\Debug\net7.0\Vzeeta.Repository.pdb
+D:\Source\Vzeeta.Repository\bin\Debug\net7.0\Vzeeta.Core.dll
+D:\Source\Vzeeta.Repository\bin\Debug\net7.0\Vzeeta.Data.dll
+D:\Source\Vzeeta.Repository\bin\Debug\net7.0\Vzeeta.Core.pdb
+D:\Source\Vzeeta.Repository\bin\Debug\net7.0\Vzeeta.Data.pdb
+D:\Source\Vzeeta.Repository\obj\Debug\net7.0\Vzeeta.Repository.csproj.AssemblyReference.cache
+D:\Source\Vzeeta.Repository\obj\Debug\net7.0\Vzeeta.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Source\Vzeeta.Repository\obj\Debug\net7.0\Vzeeta.Repository.AssemblyInfoInputs.cache
+D:\Source\Vzeeta.Repository\obj\Debug\net7.0\Vzeeta.Repository.AssemblyInfo.cs
+D:\Source\Vzeeta.Repository\obj\Debug\net7.0\Vzeeta.Repository.csproj.CoreCompileInputs.cache
+D:\Source\Vzeeta.Repository\obj\Debug\net7.0\Vzeeta.Repository.csproj.CopyComplete
+D:\Source\Vzeeta.Repository\obj\Debug\net7.0\Vzeeta.Repository.dll
+D:\Source\Vzeeta.Repository\obj\Debug\net7.0\refint\Vzeeta.Repository.dll
+D:\Source\Vzeeta.Repository\obj\Debug\net7.0\Vzeeta.Repository.pdb
+D:\Source\Vzeeta.Repository\obj\Debug\net7.0\ref\Vzeeta.Repository.dll

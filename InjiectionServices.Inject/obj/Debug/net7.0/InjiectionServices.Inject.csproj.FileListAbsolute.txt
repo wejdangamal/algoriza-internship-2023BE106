@@ -19,3 +19,24 @@ D:\.net projects\Algoriza_Traning\Final_Project\InjiectionServices.Inject\obj\De
 D:\.net projects\Algoriza_Traning\Final_Project\InjiectionServices.Inject\obj\Debug\net7.0\refint\InjiectionServices.Inject.dll
 D:\.net projects\Algoriza_Traning\Final_Project\InjiectionServices.Inject\obj\Debug\net7.0\InjiectionServices.Inject.pdb
 D:\.net projects\Algoriza_Traning\Final_Project\InjiectionServices.Inject\obj\Debug\net7.0\ref\InjiectionServices.Inject.dll
+D:\Source\InjiectionServices.Inject\bin\Debug\net7.0\InjiectionServices.Inject.deps.json
+D:\Source\InjiectionServices.Inject\bin\Debug\net7.0\InjiectionServices.Inject.dll
+D:\Source\InjiectionServices.Inject\bin\Debug\net7.0\InjiectionServices.Inject.pdb
+D:\Source\InjiectionServices.Inject\bin\Debug\net7.0\Vzeeta.Core.dll
+D:\Source\InjiectionServices.Inject\bin\Debug\net7.0\Vzeeta.Data.dll
+D:\Source\InjiectionServices.Inject\bin\Debug\net7.0\Vzeeta.Repository.dll
+D:\Source\InjiectionServices.Inject\bin\Debug\net7.0\Vzeeta.Services.dll
+D:\Source\InjiectionServices.Inject\bin\Debug\net7.0\Vzeeta.Repository.pdb
+D:\Source\InjiectionServices.Inject\bin\Debug\net7.0\Vzeeta.Services.pdb
+D:\Source\InjiectionServices.Inject\bin\Debug\net7.0\Vzeeta.Core.pdb
+D:\Source\InjiectionServices.Inject\bin\Debug\net7.0\Vzeeta.Data.pdb
+D:\Source\InjiectionServices.Inject\obj\Debug\net7.0\InjiectionServices.Inject.csproj.AssemblyReference.cache
+D:\Source\InjiectionServices.Inject\obj\Debug\net7.0\InjiectionServices.Inject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Source\InjiectionServices.Inject\obj\Debug\net7.0\InjiectionServices.Inject.AssemblyInfoInputs.cache
+D:\Source\InjiectionServices.Inject\obj\Debug\net7.0\InjiectionServices.Inject.AssemblyInfo.cs
+D:\Source\InjiectionServices.Inject\obj\Debug\net7.0\InjiectionServices.Inject.csproj.CoreCompileInputs.cache
+D:\Source\InjiectionServices.Inject\obj\Debug\net7.0\InjiectionServices.Inject.csproj.CopyComplete
+D:\Source\InjiectionServices.Inject\obj\Debug\net7.0\InjiectionServices.Inject.dll
+D:\Source\InjiectionServices.Inject\obj\Debug\net7.0\refint\InjiectionServices.Inject.dll
+D:\Source\InjiectionServices.Inject\obj\Debug\net7.0\InjiectionServices.Inject.pdb
+D:\Source\InjiectionServices.Inject\obj\Debug\net7.0\ref\InjiectionServices.Inject.dll

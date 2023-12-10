@@ -267,7 +267,7 @@ namespace Vzeeta.Data.Migrations
 
                     b.HasIndex("doctorId");
 
-                    b.ToTable("Appointments", (string)null);
+                    b.ToTable("Appointments");
                 });
 
             modelBuilder.Entity("Vzeeta.Core.Model.Booking", b =>
@@ -307,7 +307,7 @@ namespace Vzeeta.Data.Migrations
 
                     b.HasIndex("timeId");
 
-                    b.ToTable("Bookings", (string)null);
+                    b.ToTable("Bookings");
                 });
 
             modelBuilder.Entity("Vzeeta.Core.Model.DiscountCode_Coupon", b =>
@@ -320,7 +320,7 @@ namespace Vzeeta.Data.Migrations
 
                     b.Property<string>("Code")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("DiscountType")
                         .HasColumnType("int");
@@ -335,6 +335,9 @@ namespace Vzeeta.Data.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("ID");
+
+                    b.HasIndex("Code")
+                        .IsUnique();
 
                     b.ToTable("DiscountCodeCoupons", (string)null);
                 });
@@ -361,26 +364,6 @@ namespace Vzeeta.Data.Migrations
                     b.ToTable("Doctors", (string)null);
                 });
 
-            modelBuilder.Entity("Vzeeta.Core.Model.PatientDiscountCodes", b =>
-                {
-                    b.Property<string>("patientID")
-                        .HasColumnType("nvarchar(450)")
-                        .HasColumnOrder(1);
-
-                    b.Property<int>("dicountCodeID")
-                        .HasColumnType("int")
-                        .HasColumnOrder(0);
-
-                    b.Property<bool>("UsedCode")
-                        .HasColumnType("bit");
-
-                    b.HasKey("patientID", "dicountCodeID");
-
-                    b.HasIndex("dicountCodeID");
-
-                    b.ToTable("PatientDiscountCodes", (string)null);
-                });
-
             modelBuilder.Entity("Vzeeta.Core.Model.Specialization", b =>
                 {
                     b.Property<int>("ID")
@@ -399,7 +382,7 @@ namespace Vzeeta.Data.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Specializations", (string)null);
+                    b.ToTable("Specializations");
                 });
 
             modelBuilder.Entity("Vzeeta.Core.Model.TimeSlot", b =>
@@ -420,7 +403,7 @@ namespace Vzeeta.Data.Migrations
 
                     b.HasIndex("appointmentId");
 
-                    b.ToTable("TimeSlots", (string)null);
+                    b.ToTable("TimeSlots");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -522,25 +505,6 @@ namespace Vzeeta.Data.Migrations
                     b.Navigation("ApplicationUsers");
 
                     b.Navigation("specializations");
-                });
-
-            modelBuilder.Entity("Vzeeta.Core.Model.PatientDiscountCodes", b =>
-                {
-                    b.HasOne("Vzeeta.Core.Model.DiscountCode_Coupon", "Code")
-                        .WithMany()
-                        .HasForeignKey("dicountCodeID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Vzeeta.Core.Model.ApplicationUser", "patient")
-                        .WithMany()
-                        .HasForeignKey("patientID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Code");
-
-                    b.Navigation("patient");
                 });
 
             modelBuilder.Entity("Vzeeta.Core.Model.TimeSlot", b =>

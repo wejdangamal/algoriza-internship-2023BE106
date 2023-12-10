@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Vzeeta.Core.Model;
+﻿using Vzeeta.Core.Model;
 using Vzeeta.Core.Repository;
 using Vzeeta.Core.ViewModels;
 using Vzeeta.Services.Interfaces.IAdmin;
-using Vzeeta.Services.Interfaces.IPatient;
 
 namespace Vzeeta.Services.Services.AdminServices
 {
@@ -32,7 +26,10 @@ namespace Vzeeta.Services.Services.AdminServices
                 Value = entity.Value
             };
             var result = await _couponRepository.Add(newCode);
-            return result;
+            if (result)
+                return true;
+            else
+                return false;
         }
         public async Task<bool> Deactivate(int Id)
         {
