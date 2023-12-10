@@ -1,4 +1,6 @@
-﻿using Vzeeta.Core.DTOs;
+﻿using Microsoft.AspNetCore.Http;
+using System.Security.Claims;
+using Vzeeta.Core.DTOs;
 using Vzeeta.Core.Model;
 using Vzeeta.Core.Model.Enums;
 using Vzeeta.Core.Repository;
@@ -9,15 +11,18 @@ namespace Vzeeta.Services.Services.DoctorsServices
     public class DoctorRequests : IDoctorRequests
     {
         private readonly IRepository<Booking, int> bookingContext;
+        private readonly string? currentDoctorId;
 
-        public DoctorRequests(IRepository<Booking, int> bookingContext)
+        public DoctorRequests(IRepository<Booking, int> bookingContext,IHttpContextAccessor httpContextAccessor)
         {
             this.bookingContext = bookingContext;
+            currentDoctorId = httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
         }
         public async Task<bool> confirmCheckUp(int bookingId)
         {
             var findRequest = await bookingContext.GetById(bookingId);
-            if (findRequest != null)
+            var vaildDoctor = findRequest?.TimeSlot.appointments.doctorId == currentDoctorId;
+            if (findRequest != null&& vaildDoctor)
             {
                 if(findRequest.status==Status.Pending)
                 {

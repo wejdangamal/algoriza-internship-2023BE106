@@ -1,4 +1,6 @@
-﻿using Vzeeta.Core.Model;
+﻿using Microsoft.AspNetCore.Http;
+using System.Security.Claims;
+using Vzeeta.Core.Model;
 using Vzeeta.Core.Model.Enums;
 using Vzeeta.Core.Repository;
 using Vzeeta.Services.Interfaces.IDoctorInterfaces;
@@ -9,11 +11,12 @@ namespace Vzeeta.Services.Services.DoctorsServices
     {
         private readonly IRepository<TimeSlot, int> _timeSlotrepository;
         private readonly IRepository<Booking, int> bookedTime;
-
-        public TimeSlotSettings(IRepository<TimeSlot, int> timeSlotRepository, IRepository<Booking, int> bookedTime)
+        private readonly string currentDoctorId;
+        public TimeSlotSettings(IRepository<TimeSlot, int> timeSlotRepository, IRepository<Booking, int> bookedTime,IHttpContextAccessor httpContextAccessor)
         {
             _timeSlotrepository = timeSlotRepository;
             this.bookedTime = bookedTime;
+            currentDoctorId = httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
         }
         public async Task<bool> Add(TimeSlot time)
         {
@@ -28,8 +31,9 @@ namespace Vzeeta.Services.Services.DoctorsServices
         public async Task<bool> Delete(int id)
         {
             var existTime = await _timeSlotrepository.GetById(id);
+            var vaildDoctor = existTime?.appointments.doctorId == currentDoctorId;
             bool IsBooked = bookedTime.GetAllEntities().Any(x => x.timeId == id &&( x.status == Status.Pending||x.status==Status.Complete));
-            if (existTime != null)
+            if (existTime != null && vaildDoctor)
             {
                 if (IsBooked)
                     throw new Exception("Time Is Booked Can't Delete it");
@@ -55,9 +59,10 @@ namespace Vzeeta.Services.Services.DoctorsServices
         public async Task<bool> Update(TimeSlot model)
         {
             var existTime = await _timeSlotrepository.GetById(model.timeId);
+            var vaildDoctor = existTime?.appointments.doctorId == currentDoctorId;
             bool IsBooked = bookedTime.GetAllEntities().Any(x => x.timeId == model.timeId && (x.status == Status.Pending || x.status == Status.Complete));
 
-            if (existTime != null)
+            if (existTime != null && vaildDoctor)
             {
                 if (IsBooked)
                     throw new Exception("Time Is Booked Can't Update it");
