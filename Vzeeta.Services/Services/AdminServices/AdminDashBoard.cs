@@ -65,7 +65,7 @@ namespace Vzeeta.Services.Services.AdminServices
                     image = s.Select(x => x.TimeSlot.appointments.Doctor.ApplicationUsers.Image).FirstOrDefault()
                 }).OrderByDescending(s => s.requests)
                 .ThenBy(s=>s.fullName)
-                .Take(5);
+                .Take(10);
             return testBoooking;
         }
     }
