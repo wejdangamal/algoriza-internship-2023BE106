@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Emit;
 using Vzeeta.Core.Model;
+using Vzeeta.Core.Model.Enums;
 
 namespace Vzeeta.Data
 {

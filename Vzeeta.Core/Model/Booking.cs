@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Vzeeta.Core.Model.Enums;
 
 namespace Vzeeta.Core.Model
 {
@@ -22,11 +23,4 @@ namespace Vzeeta.Core.Model
         public string PatientId { get; set; }
         public virtual ApplicationUser  Patient { get; set; }
     }
-    public enum Status
-    {
-        Complete,
-        Pending,
-        Cancelled
-    }
-   
 }

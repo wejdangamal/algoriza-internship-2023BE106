@@ -550,3 +550,8 @@ D:\Source\VzeetaApp\obj\Debug\net7.0\refint\VzeetaApp.dll
 D:\Source\VzeetaApp\obj\Debug\net7.0\VzeetaApp.pdb
 D:\Source\VzeetaApp\obj\Debug\net7.0\VzeetaApp.genruntimeconfig.cache
 D:\Source\VzeetaApp\obj\Debug\net7.0\ref\VzeetaApp.dll
+D:\Source\VzeetaApp\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+D:\Source\VzeetaApp\bin\Debug\net7.0\MailKit.dll
+D:\Source\VzeetaApp\bin\Debug\net7.0\MimeKit.dll
+D:\Source\VzeetaApp\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
+D:\Source\VzeetaApp\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Vzeeta.Core.Model;
+using Vzeeta.Core.Model.Enums;
 using Vzeeta.Services.Interfaces.IDoctorInterfaces;
 
 namespace VzeetaApp.Controllers

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Vzeeta.Core.Model;
+using Vzeeta.Core.Model.Enums;
 
 namespace Vzeeta.Data.Data
 {
@@ -67,7 +68,7 @@ namespace Vzeeta.Data.Data
 
                     var admin = new ApplicationUser
                     {
-                        Email = "wejdanadmin123@gmail.com",
+                        Email = "wejdanadmain451@gmail.com",
                         firstName = "wejdan",
                         lastName = "admin",
                         gender = Gender.FEMALE,

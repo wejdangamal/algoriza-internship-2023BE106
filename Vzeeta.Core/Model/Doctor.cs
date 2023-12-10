@@ -14,8 +14,8 @@ namespace Vzeeta.Core.Model
         [Key]
         public int Id { get; set; }
         [ForeignKey("specializations")]
-        public int specializeId { get; set; } //(FK)
-        public virtual Specialization specializations { get; set; } //Navigation Property
+        public int specializeId { get; set; } 
+        public virtual Specialization specializations { get; set; } 
         public virtual List<Appointments> Appointments { get; set; }
         
         [ForeignKey("ApplicationUsers")]

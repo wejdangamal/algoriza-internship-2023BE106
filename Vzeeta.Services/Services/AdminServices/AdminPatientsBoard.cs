@@ -2,6 +2,7 @@
 using System.Security.Cryptography.X509Certificates;
 using Vzeeta.Core.DTOs;
 using Vzeeta.Core.Model;
+using Vzeeta.Core.Model.Enums;
 using Vzeeta.Core.Repository;
 using Vzeeta.Core.Service;
 using Vzeeta.Services.Interfaces.IAdmin;

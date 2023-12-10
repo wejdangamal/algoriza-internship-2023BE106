@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Vzeeta.Core.Model;
+using Vzeeta.Core.Model.Enums;
 
 namespace Vzeeta.Core.DTOs
 {

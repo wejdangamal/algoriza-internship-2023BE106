@@ -36,6 +36,7 @@ namespace InjiectionServices.Inject.ServiceRegistration
             services.AddScoped<IDoctorRepository, DoctorAppointmentsService>();
             services.AddScoped<ITimeSlotSettings, TimeSlotSettings>();
             services.AddScoped<IAppointmentSettings, AppointmentSettings>();
+            services.AddScoped<ISendEmailService, SendEmailService>();
         }
     }
 }

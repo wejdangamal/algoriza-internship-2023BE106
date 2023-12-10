@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Vzeeta.Core.Model;
+using Vzeeta.Core.Model.Enums;
 using Vzeeta.Core.ViewModels;
 
 namespace Vzeeta.Core.DTOs

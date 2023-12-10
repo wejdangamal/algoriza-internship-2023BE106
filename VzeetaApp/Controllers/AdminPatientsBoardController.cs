@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Vzeeta.Core.Model;
+using Vzeeta.Core.Model.Enums;
 using Vzeeta.Services.Interfaces.IAdmin;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860

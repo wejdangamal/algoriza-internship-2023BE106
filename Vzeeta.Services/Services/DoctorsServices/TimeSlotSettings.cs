@@ -1,4 +1,5 @@
 ﻿using Vzeeta.Core.Model;
+using Vzeeta.Core.Model.Enums;
 using Vzeeta.Core.Repository;
 using Vzeeta.Services.Interfaces.IDoctorInterfaces;
 

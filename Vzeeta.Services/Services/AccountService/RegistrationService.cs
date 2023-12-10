@@ -1,6 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Identity;
 using Vzeeta.Core.Model;
+using Vzeeta.Core.Model.Enums;
 using Vzeeta.Core.Repository;
 using Vzeeta.Core.Service;
 using Vzeeta.Core.ViewModels;

@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Vzeeta.Core.Model;
+using Vzeeta.Core.Model.Enums;
 
 namespace Vzeeta.Core.DTOs
 {
@@ -21,7 +21,7 @@ namespace Vzeeta.Core.DTOs
         [DataType(DataType.Date, ErrorMessage = "Invaild Date")]
         public DateTime DateOfBirth { get; set; }
         [DataType(DataType.EmailAddress, ErrorMessage = "Invaild Email")]
-        [RegularExpression(@"[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$", ErrorMessage = "Invaild email Pattern")]
+        [RegularExpression(@"[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$", ErrorMessage = "Invaild email Pattern please@")]
         [Required]
         public string email { get; set; }
         [Required]

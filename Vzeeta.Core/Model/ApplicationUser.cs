@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Vzeeta.Core.Model.Enums;
+
 namespace Vzeeta.Core.Model
 {
     public class ApplicationUser : IdentityUser

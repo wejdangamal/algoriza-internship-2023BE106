@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Vzeeta.Core.Model;
 using Vzeeta.Core.Service;
 using Vzeeta.Core.ViewModels;
+using Vzeeta.Services.Interfaces.IAdmin;
 
 namespace VzeetaApp.Controllers
 {
@@ -11,10 +11,12 @@ namespace VzeetaApp.Controllers
     public class AccountController : ControllerBase
     {
         private readonly IRegistrationService userService;
+        private readonly ISendEmailService sendEmailService;
 
-        public AccountController(IRegistrationService userService)
+        public AccountController(IRegistrationService userService, ISendEmailService sendEmailService)
         {
             this.userService = userService;
+            this.sendEmailService = sendEmailService;
         }
         [Authorize(Roles = "Admin")]
         [HttpPost("Doctor/SignUp")]
@@ -24,13 +26,25 @@ namespace VzeetaApp.Controllers
             {
                 var result = await userService.DoctorRegisterAsync(model);
                 if (result)
-                    return Ok(result);
+                {
+                    try
+                    {
+                        var body = $"<h1>Hi This is Your Account Info to SignIn and use Vzeeta App</h1>" +
+                        $"Email: {model.email}<br> " +
+                        $"Password: {model.password}<br> " + "Thanks For Using Vzeeta";
+                        await sendEmailService.sendEmail(model.email, body);
+                        return Ok(result);
+                    }catch(Exception ex)
+                    {
+                        return BadRequest(ex.Message);
+                    }             
+                }
                 else
                     return BadRequest(result);
             }
             return BadRequest(new { Errors = ModelInValid() });
         }
-        [Authorize(Roles ="Patient")]
+        [Authorize(Roles = "Patient")]
         [HttpPost("User/SignUp")]
         public async Task<IActionResult> SignUpUser([FromForm] UserRegistrationVM model)
         {

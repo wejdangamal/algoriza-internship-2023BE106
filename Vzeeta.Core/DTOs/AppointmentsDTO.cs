@@ -1,4 +1,4 @@
-﻿using Vzeeta.Core.Model;
+﻿using Vzeeta.Core.Model.Enums;
 
 namespace Vzeeta.Core.DTOs
 {

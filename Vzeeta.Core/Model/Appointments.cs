@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Vzeeta.Core.Model.Enums;
 
 namespace Vzeeta.Core.Model
 {
@@ -22,15 +23,5 @@ namespace Vzeeta.Core.Model
         public virtual Appointments appointments { get; set; }
         public virtual List<Booking> Bookings { get; set; }
 
-    }
-    public enum Day
-    {
-        Saturday,
-        Sunday,
-        Monday,
-        Tuesday,
-        Wednesday,
-        Thursday,
-        Friday,
     }
 }
