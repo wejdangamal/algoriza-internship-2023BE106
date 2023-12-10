@@ -124,7 +124,7 @@ namespace Vzeeta.Services.Services.PatientsServices
                 }
 
             }
-            throw new Exception($"Invalid Code Number Of Completed Requests must be {numOfReqs} to use");
+            throw new Exception($"Invalid Number Of Completed Requests to use code");
 
         }
     }

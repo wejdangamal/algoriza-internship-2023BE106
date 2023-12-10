@@ -44,7 +44,7 @@ namespace VzeetaApp.Controllers
             }
             return BadRequest(new { Errors = ModelInValid() });
         }
-        [Authorize(Roles = "Patient")]
+        [AllowAnonymous]
         [HttpPost("User/SignUp")]
         public async Task<IActionResult> SignUpUser([FromForm] UserRegistrationVM model)
         {
