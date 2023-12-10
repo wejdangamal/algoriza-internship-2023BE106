@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VzeetaApp", "VzeetaApp.csproj", "{286825D8-6C87-469D-8A1A-CBC523CD2B81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vzeeta.Core", "..\Vzeeta.Core\Vzeeta.Core.csproj", "{CBDA8373-FE2D-4B72-ACBC-57435D2F1775}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vzeeta.Repository", "..\Vzeeta.Repository\Vzeeta.Repository.csproj", "{7135BB90-767A-43AE-A477-614F0F42007A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vzeeta.Services", "..\Vzeeta.Services\Vzeeta.Services.csproj", "{ABC916EC-6D9F-456B-98FF-910A30120355}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vzeeta.Data", "..\Vzeeta.Data\Vzeeta.Data.csproj", "{89571BB7-6971-4F42-BDB8-048713493667}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjiectionServices.Inject", "..\InjiectionServices.Inject\InjiectionServices.Inject.csproj", "{877079A9-A5D0-4A80-99D6-82FBDB47A3B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{286825D8-6C87-469D-8A1A-CBC523CD2B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{286825D8-6C87-469D-8A1A-CBC523CD2B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{286825D8-6C87-469D-8A1A-CBC523CD2B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{286825D8-6C87-469D-8A1A-CBC523CD2B81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBDA8373-FE2D-4B72-ACBC-57435D2F1775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBDA8373-FE2D-4B72-ACBC-57435D2F1775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBDA8373-FE2D-4B72-ACBC-57435D2F1775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBDA8373-FE2D-4B72-ACBC-57435D2F1775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7135BB90-767A-43AE-A477-614F0F42007A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7135BB90-767A-43AE-A477-614F0F42007A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7135BB90-767A-43AE-A477-614F0F42007A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7135BB90-767A-43AE-A477-614F0F42007A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABC916EC-6D9F-456B-98FF-910A30120355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABC916EC-6D9F-456B-98FF-910A30120355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABC916EC-6D9F-456B-98FF-910A30120355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABC916EC-6D9F-456B-98FF-910A30120355}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89571BB7-6971-4F42-BDB8-048713493667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89571BB7-6971-4F42-BDB8-048713493667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89571BB7-6971-4F42-BDB8-048713493667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89571BB7-6971-4F42-BDB8-048713493667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{877079A9-A5D0-4A80-99D6-82FBDB47A3B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{877079A9-A5D0-4A80-99D6-82FBDB47A3B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{877079A9-A5D0-4A80-99D6-82FBDB47A3B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{877079A9-A5D0-4A80-99D6-82FBDB47A3B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BD9441D-5381-4EAD-876C-32D679518C43}
+	EndGlobalSection
+EndGlobal

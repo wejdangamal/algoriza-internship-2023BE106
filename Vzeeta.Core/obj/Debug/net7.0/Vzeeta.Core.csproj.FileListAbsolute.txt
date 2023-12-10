@@ -1,0 +1,12 @@
+D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Core\bin\Debug\net7.0\Vzeeta.Core.deps.json
+D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Core\bin\Debug\net7.0\Vzeeta.Core.dll
+D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Core\bin\Debug\net7.0\Vzeeta.Core.pdb
+D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Core\obj\Debug\net7.0\Vzeeta.Core.csproj.AssemblyReference.cache
+D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Core\obj\Debug\net7.0\Vzeeta.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Core\obj\Debug\net7.0\Vzeeta.Core.AssemblyInfoInputs.cache
+D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Core\obj\Debug\net7.0\Vzeeta.Core.AssemblyInfo.cs
+D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Core\obj\Debug\net7.0\Vzeeta.Core.csproj.CoreCompileInputs.cache
+D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Core\obj\Debug\net7.0\Vzeeta.Core.dll
+D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Core\obj\Debug\net7.0\refint\Vzeeta.Core.dll
+D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Core\obj\Debug\net7.0\Vzeeta.Core.pdb
+D:\.net projects\Algoriza_Traning\Final_Project\Vzeeta.Core\obj\Debug\net7.0\ref\Vzeeta.Core.dll
