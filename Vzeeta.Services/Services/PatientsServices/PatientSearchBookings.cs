@@ -4,7 +4,9 @@ using Vzeeta.Core.DTOs;
 using Vzeeta.Core.Model;
 using Vzeeta.Core.Model.Enums;
 using Vzeeta.Core.Repository;
+using Vzeeta.Services.Interfaces;
 using Vzeeta.Services.Interfaces.IPatient;
+using Vzeeta.Services.Services.BookingServices;
 
 namespace Vzeeta.Services.Services.PatientsServices
 {
@@ -56,8 +58,9 @@ namespace Vzeeta.Services.Services.PatientsServices
                                 var IsUsedOnce = request.GetAllEntities().Any(x => x.PatientId == userId && x.DiscountCode == discountCode);
                                 if (!IsUsedOnce)
                                 {
+                                    IBookingService newDiscountBooking = new BookingService();
                                     newRequest.DiscountCode = discountCode;
-                                    calculateFinalPrice(vaildCode.DiscountType, userCompletedRequestsCount, vaildCode.NoOfRequests, vaildCode.Value, ref finalPrice);
+                                    newDiscountBooking.calculateFinalPrice(vaildCode, userCompletedRequestsCount,ref finalPrice);
                                     newRequest.finalPrice = finalPrice;
                                 }
                                 else
@@ -109,23 +112,6 @@ namespace Vzeeta.Services.Services.PatientsServices
                 }).ToList()
             }).ToList();
             return allDoctorsDetails;
-        }
-        private void calculateFinalPrice(DiscountType codeType, int userRequestsCount, int numOfReqs, decimal value, ref decimal Price)
-        {
-            if (numOfReqs == 0 || userRequestsCount % numOfReqs == 0)
-            {
-                if (codeType == DiscountType.Percentage)
-                {
-                    Price = Price < value ? 0 : Price - Price * (value / 100);
-                }
-                else
-                {
-                    Price = Price < value ? 0 : Price - value;
-                }
-
-            }
-            throw new Exception($"Invalid Number Of Completed Requests to use code");
-
         }
     }
 }

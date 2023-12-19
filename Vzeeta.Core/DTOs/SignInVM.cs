@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Vzeeta.Core.ViewModels
 {
-    public class SignInVM
+    public class SignInDTO
     {
         [Required]
         [DataType(DataType.EmailAddress, ErrorMessage = "Invaild Email")]

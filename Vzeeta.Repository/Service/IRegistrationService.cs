@@ -12,7 +12,7 @@ namespace Vzeeta.Core.Service
     public interface IRegistrationService
     {
         Task<bool> DoctorRegisterAsync(DoctorRegistrationDTO model);
-        Task<SignInResult> LoginAsync(SignInVM model);
-        Task<bool> UserRegisterAsync(UserRegistrationVM model);
+        Task<SignInResult> LoginAsync(SignInDTO model);
+        Task<bool> UserRegisterAsync(UserRegistrationDTO model);
     }
 }

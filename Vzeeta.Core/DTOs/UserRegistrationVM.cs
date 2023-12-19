@@ -10,7 +10,7 @@ using Vzeeta.Core.Model;
 
 namespace Vzeeta.Core.ViewModels
 {
-    public class UserRegistrationVM: BaseRegistrationDTO
+    public class UserRegistrationDTO: BaseRegistrationDTO
     {
         public IFormFile? Image { get; set; }
     }

@@ -24,44 +24,46 @@ namespace VzeetaApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await userService.DoctorRegisterAsync(model);
-                if (result)
+                try
                 {
-                    try
+                    var result = await userService.DoctorRegisterAsync(model);
+                    if (result)
                     {
                         var body = $"<h1>Hi This is Your Account Info to SignIn and use Vzeeta App</h1>" +
                         $"Email: {model.email}<br> " +
                         $"Password: {model.password}<br> " + "Thanks For Using Vzeeta";
                         await sendEmailService.sendEmail(model.email, body);
                         return Ok(result);
-                    }catch(Exception ex)
-                    {
-                        return BadRequest(ex.Message);
-                    }             
+                    }
                 }
-                else
-                    return BadRequest(result);
+                catch (Exception ex)
+                {
+                    return BadRequest(ex.Message);
+                }
             }
             return BadRequest(new { Errors = ModelInValid() });
         }
         [AllowAnonymous]
         [HttpPost("User/SignUp")]
-        public async Task<IActionResult> SignUpUser([FromForm] UserRegistrationVM model)
+        public async Task<IActionResult> SignUpUser([FromForm] UserRegistrationDTO model)
         {
             if (ModelState.IsValid)
             {
-
-                var result = await userService.UserRegisterAsync(model);
-                if (result)
-                    return Ok(result);
-                else
-                    return BadRequest(result);
+                try
+                {
+                    var result = await userService.UserRegisterAsync(model);
+                    if (result)
+                        return Ok(result);
+                }catch(Exception ex)
+                {
+                    return BadRequest(ex.Message);
+                }
             }
             return BadRequest(new { Errors = ModelInValid() });
         }
         [AllowAnonymous]
         [HttpPost("Login")]
-        public async Task<IActionResult> login(SignInVM model)
+        public async Task<IActionResult> login(SignInDTO model)
         {
             if (ModelState.IsValid)
             {
